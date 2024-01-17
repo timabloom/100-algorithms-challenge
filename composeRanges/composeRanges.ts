@@ -1,4 +1,7 @@
 export function composeRanges(nums: number[]): string[] {
+  if (nums.length < 1) {
+    return [];
+  }
   let composeRanges: string[] = [];
   let range = "";
   for (let i = 0; i < nums.length; i++) {
