@@ -6,6 +6,7 @@ export function fancyRide(l: number, fares: number[]): string {
       return ubers[i];
     }
   }
+  return "none";
 }
 
 console.log(fancyRide(30, [0.3, 0.5, 0.7, 1, 1.3]));
