@@ -1,7 +1,9 @@
 export function firstDigit(inputString: string): string {
-
+  const digits = inputString.match(/[0-9]/g);
+  if (!digits) return "";
+  return digits[0];
 }
 
-// console.log(firstDigit('var_1__Int'));
-// console.log(firstDigit('q2q-q'));
-// console.log(firstDigit('0ss'));
+console.log(firstDigit("var_1__Int"));
+console.log(firstDigit("q2q-q"));
+console.log(firstDigit("0ss"));
