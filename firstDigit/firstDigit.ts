@@ -1,6 +1,5 @@
 export function firstDigit(inputString: string): string {
-  const digits = inputString.match(/[0-9]/g);
-  if (!digits) return "";
+  const digits = inputString.match(/[0-9]/g) as string[];
   return digits[0];
 }
 
