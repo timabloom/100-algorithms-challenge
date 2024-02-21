@@ -25,8 +25,6 @@ htmlEndTagByStartTag(startTag) = "</i>".
 - **[execution time limit] 5 seconds (ts)**
 - **[input] string startTag**
 
-    The total number of legs in the house.
-
 *Guaranteed constraints:*
 
 3 ≤ startTag.length ≤ 75.
