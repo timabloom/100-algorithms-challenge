@@ -7,7 +7,7 @@ export function isLucky(n: number): boolean {
   const sumStart: number = getSum(startNumbers);
   const sumEnd: number = getSum(endNumbers);
 
-  return sumStart === sumEnd ? true : false;
+  return sumStart === sumEnd;
 }
 
 function getSum(numbersArray: string[]) {
