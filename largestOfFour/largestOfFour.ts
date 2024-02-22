@@ -6,10 +6,8 @@ export function largestOfFour(nums: number[][]): number[] {
       if (nums[i][j] > largestNumber) {
         largestNumber = nums[i][j];
       }
-      if (j === nums[i].length - 1) {
-        largestNumbersArray.push(largestNumber);
-      }
     }
+    largestNumbersArray.push(largestNumber);
   }
   return largestNumbersArray;
 }
