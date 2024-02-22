@@ -4,15 +4,15 @@ export function isLucky(n: number): boolean {
   const startNumbers = ticket.slice(0, ticket.length / 2).split("");
   const endNumbers = ticket.slice(ticket.length / 2).split("");
 
-  const sumStart: number = getSum(startNumbers);
-  const sumEnd: number = getSum(endNumbers);
+  const sumStart = getSum(startNumbers);
+  const sumEnd = getSum(endNumbers);
 
   return sumStart === sumEnd;
 }
 
 function getSum(numbersArray: string[]) {
   return numbersArray.reduce(
-    (acc: number, curr: string) => acc + parseInt(curr),
+    (acc, curr) => acc + parseInt(curr),
     0
   );
 }
