@@ -1,5 +1,5 @@
 export function makeArrayConsecutive2(statues: number[]): number {
-  const statuesSorted = statues.sort();
+  const statuesSorted = statues.sort((a, b) => a - b);
   let count = 0;
   for (
     let i = statuesSorted[0] + 1;
